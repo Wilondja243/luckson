@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import * as React from 'react';
+import { Routes, Route, Link } from 'react-router-dom';
+import 'bootstrap-icons/font/bootstrap-icons.css';
 
-function App() {
+// useContext
+import { UseContext } from './hooks/use-context';
+
+// routers
+import Router from './app/router';
+
+import Contact from './app/page/contact';
+import ProjectScreen from './app/page/project';
+import About from './app/page/about';
+import Service from './app/page/service';
+
+
+// styles css
+
+import './styleSheet/App.css';
+
+    
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <UseContext>
+      <Routes>
+        <Route path="/" element={<Router />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/project" element={<ProjectScreen />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+    </UseContext>
   );
 }
-
-export default App;

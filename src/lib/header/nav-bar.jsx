@@ -1,0 +1,33 @@
+import {Link } from 'react-router-dom';
+import { useEffect } from 'react';
+
+
+import {MyContext} from '../../hooks/use-context';
+import { useContext } from 'react';
+import Button from '../../components/ui/button';
+
+
+export default function NavBar() {
+  const {search,setSearch} = useContext(MyContext);
+
+    return (
+      <>
+        <div className='navigation'>
+          <nav className='nav-list'>
+            <div>
+              <i className="bi bi-code"></i>
+              <h1>LuckCode</h1>
+            </div>
+            <ul>
+              <li><a className='link active' href="#">Home</a></li>
+              <li><a className='link' href="#services">Services</a></li>
+              <li><a className='link' href="#project">Projects</a></li>
+              <li><a className='link' href="#about">About</a></li>
+              <li><a className='link' href="#contact">Contact</a></li>
+            </ul>
+            <Button />
+          </nav>
+        </div>
+      </>
+    );
+  } 
