@@ -106,7 +106,6 @@ header {
   .nav-list ul{
     position: absolute;
     top: 4.5em;
-    left: 0;
     width: 100%;
     justify-content: center;
     flex-wrap: wrap;
@@ -114,6 +113,12 @@ header {
     background: var(--bs-card);
     border-radius: 50px;
     border: 1px solid var(--bs-border);
+  }
+  .nav-list ul.left-0{
+    left: 0;
+  }
+  .nav-list ul.hidden-left{
+    left: -100%;
   }
   .nav-list ul.displayNav{
     display: block;
@@ -131,6 +136,7 @@ header {
 /* thumbenail content style */
 
 .hero {
+    left: -100%;
   min-height: 100vh;
   display: flex;
   align-items: center;
