@@ -1,6 +1,6 @@
-export default function Button({onClick, text}){
+export default function Button({disabled, text}){
     return (
-        <button onClick={onClick} className="btn">
+        <button disabled={disabled} className="btn">
             {text}
         </button>
     )

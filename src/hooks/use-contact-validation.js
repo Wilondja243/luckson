@@ -15,7 +15,7 @@ export default function useLoginValidation() {
         }
 
         setErrors(newErrors);
-        return Object.keys(errors).length === 0;
+        return Object.keys(newErrors).length === 0;
     };
 
     return {

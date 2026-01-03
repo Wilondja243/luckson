@@ -64,7 +64,7 @@ export default function Contact() {
         </p>
       </div>
 
-      <form className="contact-form" method="post">
+      <form className="contact-form" onSubmit={onFormSubmit} method="post">
         {Object.values(errors).map((error, i)=>(
           <div key={i} className="errors">{error}</div>
         ))}
@@ -87,8 +87,8 @@ export default function Contact() {
           onChange={(e)=> setDescription(e.target.value)}
           placeholder="Votre message">
         </textarea>
-        <Button 
-          onClick={onFormSubmit}
+        <Button
+          disabled={isSending}
           text={isSending ? "Envoi en cours..." : "Envoyer le message"}
         />
       </form>
