@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import { HashLink } from 'react-router-hash-link';
 
-
 export default function NavBar() {
     const [open, setOpen] = useState(false);
 

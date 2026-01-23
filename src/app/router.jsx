@@ -9,7 +9,6 @@ import Hero from '../lib/header/hero';
 import NavBar from '../lib/header/nav-bar';
 import Footer from '../lib/header/footer';
 
-
 export default function Router() {
     return (
         <>

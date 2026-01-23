@@ -1,6 +1,5 @@
 import { Code, Shield, Cpu } from 'lucide-react';
 
-
 export default function About() {
     return (
         <section className="min-h-screen flex justify-center items-center">
@@ -50,7 +49,7 @@ export default function About() {
                             Voir mon CV →
                         </a>
                         <a
-                            href=""
+                            href="/files/wilondja_cv.pdf"
                             download="Wilondja_Ebuela_CV.pdf"
                             className="py-3 px-[clamp(20px,5vw,35px)] text-md text-muted border border-border rounded-3xl hover:bg-border transition"
                         >

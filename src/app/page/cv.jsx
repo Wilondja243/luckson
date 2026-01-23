@@ -190,12 +190,12 @@ export default function CVPage() {
                 </div>
 
                 <div className="fixed bottom-6 right-6">
-                    <button className="bg-tint_soft hover:bg-tint text-text px-4 py-2 rounded-full shadow-xl transition-all hover:scale-110 flex items-center gap-2 font-bold">
+                    <a href='/files/wilondja_cv.pdf' download="Wilodja_Ebuela_CV.pdf" className="bg-tint_soft hover:bg-tint text-text px-4 py-2 rounded-full shadow-xl transition-all hover:scale-110 flex items-center gap-2 font-bold">
                         <Download size={20} />{' '}
                         <span className="text-xs uppercase tracking-tighter">
                             Télécharger PDF
                         </span>
-                    </button>
+                    </a>
                 </div>
             </div>
 
