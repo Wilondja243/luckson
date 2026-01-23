@@ -14,50 +14,48 @@ import ProjectScreen from './app/page/project';
 import About from './app/page/about';
 import Service from './app/page/service';
 
-
 import Loading from './components/ui/loading';
-
 
 // styles css
 import './styleSheet/App.css';
 
-    
 export default function App() {
-  const [isReady, setIsReady] = React.useState(false);
+    const [isReady, setIsReady] = React.useState(false);
 
-  React.useEffect(()=> {
-    const handleLoad = () => {
-      setIsReady(true)
-    }
-    
-    if(document.readyState == 'complete'){
-      handleLoad();
-    }
-    else{
-      window.addEventListener('load', handleLoad);
+    React.useEffect(() => {
+        const handleLoad = () => {
+            setIsReady(true);
+        };
 
-      return ()=> window.removeEventListener('lead', handleLoad);
-    }
-  }, [])
+        if (document.readyState == 'complete') {
+            handleLoad();
+        } else {
+            window.addEventListener('load', handleLoad);
 
-  return (
-    <UseContext>
-      <Loading active={!isReady} />
-      <div style={{ 
-        visibility: isReady ? 'visible' : 'hidden',
-        overflow: isReady ? 'visible' : 'hidden',
-        height: isReady ? 'auto' : '100vw',
-        opacity: isReady ? 1 : 0,
-        transition: 'opacity 0.5s ease'
-      }}>
-        <Toaster position='top-right' reverseOrder={false} />
-        <Routes>
-          <Route path="/" element={<Router />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/project" element={<ProjectScreen />} />
-          <Route path="/about" element={<About />} />
-        </Routes>
-      </div>
-    </UseContext>
-  );
+            return () => window.removeEventListener('load', handleLoad);
+        }
+    }, []);
+
+    return (
+        <UseContext>
+            <Loading active={!isReady} />
+            <div
+                style={{
+                    visibility: isReady ? 'visible' : 'hidden',
+                    overflow: isReady ? 'visible' : 'hidden',
+                    height: isReady ? 'auto' : '100vw',
+                    opacity: isReady ? 1 : 0,
+                    transition: 'opacity 0.5s ease',
+                }}
+            >
+                <Toaster position="top-right" reverseOrder={false} />
+                <Routes>
+                    <Route path="/" element={<Router />} />
+                    <Route path="/contact" element={<Contact />} />
+                    <Route path="/project" element={<ProjectScreen />} />
+                    <Route path="/about" element={<About />} />
+                </Routes>
+            </div>
+        </UseContext>
+    );
 }

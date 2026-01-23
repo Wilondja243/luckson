@@ -1,59 +1,37 @@
-import Button from "../../components/ui/button";
-
-
+import Button from '../../components/ui/button';
 
 export default function Hero() {
-  return (
-    <section className="hero">
-      <div className="hero-content">
+    return (
+        <section className="min-h-screen flex justify-center items-center">
+            <div className="text-center">
+                <span className="inline-block mb-4 py-1 px-4 text-sm space-x-1 uppercase text-tint bg-[rgba(0,189,149,0.12)] rounded-3xl">
+                    Digital Architect • Security • AI
+                </span>
 
-        <div className="hero-intro">
-          <span className="hero-tag">Digital Architect • Security • AI</span>
+                <h1 className="hero-title text-[clamp(35px,5vw,55px)] font-semibold text-text leading-tight max-w-[800px]">
+                    Je conçois des
+                    <span className="text-tint"> systèmes digitaux </span>
+                    performants & sécurisés
+                </h1>
 
-          <h1 className="hero-title">
-            Je conçois des
-            <span> systèmes digitaux </span>
-            performants & sécurisés
-          </h1>
+                <p className="text-[15px] text-center max-w-[520px] mx-auto mt-5 text-muted leading-tight">
+                    Développeur FullStack & Pentester, je crée des applications
+                    modernes, scalables et pensées pour le monde réel.
+                </p>
 
-          <p className="hero-desc">
-            Développeur FullStack & Pentester, je crée des applications modernes,
-            scalables et pensées pour le monde réel.
-          </p>
-
-          <div className="hero-actions">
-            <Button text="Nous contactez" />
-            <a href="#project" className="hero-link">
-              Voir mes projets →
-            </a>
-          </div>
-        </div>
-
-        <div className="hero-visual">
-          <Box3D title="Intelligence Artificielle" icon="bi bi-cpu-fill" colorClass="ai" />
-          <Box3D title="CyberSécurité" icon="bi bi-shield-lock-fill" colorClass="security" />
-          <Box3D title="Développement Mobile" icon="bi bi-phone-fill" colorClass="mobile" />
-          <Box3D title="Développement Web" icon="bi bi-display-fill" colorClass="web" />
-      
-          <div className="glow"></div>
-        </div>
-
-      </div>
-    </section>
-  );
+                <div className="mt-10 flex items-center justify-center wrap gap-8">
+                    <a href='#contact' className="py-3 px-[clamp(20px,5vw,35px)] text-md text-muted relative border border-border rounded-3xl bg-border hover:bg-transparent">
+                        Me contacter
+                    </a>
+                    <a
+                        href="#project"
+                        className="py-3 px-[clamp(20px,5vw,35px)] text-md text-muted relative border border-border rounded-3xl hover:bg-border"
+                    >
+                        Télecharger mon CV →
+                    </a>
+                </div>
+            </div>
+            <div className="glow"></div>
+        </section>
+    );
 }
-
-
-const Box3D = ({ title, icon, colorClass }) => (
-  <div className={`hero-item ${colorClass}`}>
-    <div className="face front">
-      <i className={`bi ${icon}`}></i>
-      <h3>{title}</h3>
-    </div>
-    <div className="face back"></div>
-    <div className="face right"></div>
-    <div className="face left"></div>
-    <div className="face top"></div>
-    <div className="face bottom"></div>
-  </div>
-);

@@ -1,120 +1,72 @@
-import useRevealOnScroll from "../../hooks/use-reveal";
-import { useState, useRef } from "react";
+import Button from '../../components/ui/button';
+import { Code, Shield, Cpu } from 'lucide-react';
 
 export default function About() {
-  const skillsRef = useRevealOnScroll();
-  const statsRef = useRevealOnScroll();
-  const expRef = useRevealOnScroll();
+    return (
+        <section className="min-h-screen flex justify-center items-center">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
+                {/* Texte */}
+                <div className="about-intro">
+                    <span className="text-sm text-tint uppercase font-medium tracking-wide">
+                        À propos de moi
+                    </span>
 
-  const [modal, setModal] = useState(null);
+                    <h1 className="text-[clamp(20px,5vw,43px)] font-bold text-text mt-3 leading-tight max-w-[700px]">
+                        Je suis{' '}
+                        <span className="text-tint">Wilonjda Ebuela</span>,
+                        développeur FullStack & passionné de cybersécurité
+                    </h1>
 
-  return (
-    <main className="skills-page">
+                    <p className="mt-5 text-[15px] text-muted leading-relaxed max-w-[550px]">
+                        Je conçois des applications performantes, sécurisées et
+                        orientées utilisateur. J’allie développement, sécurité
+                        et intelligence artificielle pour créer des solutions
+                        qui font vraiment la différence.
+                    </p>
 
-      <section ref={skillsRef}  className="reveal section">
-        <h2 className="child">Compétences</h2>
+                    <div className="mt-6 flex flex-wrap gap-4">
+                        <div className="flex items-center gap-2 text-muted">
+                            <Code className="text-tint" /> Développement Web
+                        </div>
+                        <div className="flex items-center gap-2 text-muted">
+                            <Shield className="text-tint" /> Cybersécurité
+                        </div>
+                        <div className="flex items-center gap-2 text-muted">
+                            <Cpu className="text-tint" /> Intelligence
+                            Artificielle
+                        </div>
+                    </div>
 
-        <div className="skills-list child">
-          {[
-            ["Python / Django", 70],
-            ["JavaScript / React", 80],
-            ["React Native", 70],
-            ["AI (ML / DL)", 55],
-            ["CyberSécurité", 65],
-          ].map(([label, value]) => (
-            <div
-              key={label}
-              className="skill-line"
-              onClick={() => setModal(label)}
-            >
-              <div className="skill-level">
-                <span>{label}</span>
-                <span>{value}%</span>
-              </div>
-              
-              <div className="bar">
-                <div className="fill" style={{ width: `${value}%` }} />
-              </div>
+                    <p className="mt-4 text-[15px] text-muted leading-relaxed max-w-[550px]">
+                        Quand je ne code pas, je m’intéresse à la veille tech et
+                        à la découverte de nouvelles technologies qui
+                        transforment notre manière de travailler.
+                    </p>
+
+                    <div className="mt-8 flex flex-wrap gap-6">
+                        <a href='#contact' className="py-3 px-[clamp(20px,5vw,35px)] text-md text-muted relative border border-border rounded-3xl bg-border hover:bg-transparent">
+                            Me contacter
+                        </a>
+                        <a
+                            href="#projects"
+                            className="py-3 px-[clamp(20px,5vw,35px)] text-md text-muted border border-border rounded-3xl hover:bg-border transition"
+                        >
+                            Voir mes projets →
+                        </a>
+                    </div>
+                </div>
+
+                <div className="about-visual relative flex justify-center md:justify-end">
+                    <img
+                        src="images/luckson.jpg"
+                        alt="Luckson"
+                        className="rounded-3xl shadow-xl w-full max-w-[400px] object-cover"
+                    />
+
+                    {/* <div className="absolute -top-3 left-8 w-24 h-24 border-2 border-tint rounded-full animate-pulse opacity-40"></div>
+          <div className="absolute -bottom-5 -right-5 w-16 h-16 border-2 border-tint rounded-full animate-pulse opacity-30"></div> */}
+                </div>
             </div>
-          ))}
-        </div>
-      </section>
-
-      <section ref={statsRef}  className="reveal section stats">
-        <div className="stat child">
-          <strong>8+</strong>
-          <span>Projets réalisés</span>
-        </div>
-        <div className="stat child">
-          <strong>3+</strong>
-          <span>Années d"expérience</span>
-        </div>
-        <div className="stat child">
-          <strong>6+</strong>
-          <span>Technologies maîtrisées</span>
-        </div>
-      </section>
-
-      <section ref={expRef}  className="reveal section">
-        <h2 className="child">Expériences</h2>
-
-        <div className="timeline child">
-          <div
-            // ref={btnRef}
-            className="experience"
-            onClick={() => setModal("exp1")}
-          >
-            <span className="year">2025</span>
-            <p>IA & Sécurité - Projets personnels et recherches</p>
-          </div>
-
-          <div
-            // ref={btnRef}
-            className="experience"
-            onClick={() => setModal("exp2")}
-          >
-            <span className="year">2025</span>
-            <p>Encadreur Python chez SOFT AVOLIK (1 mois)</p>
-          </div>
-
-          <div
-            // ref={btnRef}
-            className="experience"
-            onClick={() => setModal("exp3")}
-          >
-            <span className="year">2024-2025</span>
-            <p>Développeur Backend (Django) chez Magis Fintech Solution (5 mois)</p>
-          </div>
-
-          <div
-            // ref={btnRef}
-            className="experience"
-            onClick={() => setModal("exp4")}
-          >
-            <span className="year">2023</span>
-            <p>Développeur Web & Mobile - Projets Freelance</p>
-          </div>
-        </div>
-      </section>
-
-      {modal && (
-        <div className="modal-backdrop" onClick={() => setModal(null)}>
-          <div className="modal" onClick={(e) => e.stopPropagation()}>
-            <h3>Détails</h3>
-            <p>
-              {modal === "exp1" &&
-                "Développement d'APIs, backends sécurisés, ORM, auth, performance."}
-              {modal === "exp2" &&
-                "Modèles de prédiction, classification, apprentissage supervisé."}
-              {modal === "exp3" &&
-                "Création d'applications web et mobiles complètes pour clients."}
-              {modal === "exp4" && 
-                "Developpeur Freelance"}
-            </p>
-            <button onClick={() => setModal(null)}>Fermer</button>
-          </div>
-        </div>
-      )}
-    </main>
-  );
+        </section>
+    );
 }
