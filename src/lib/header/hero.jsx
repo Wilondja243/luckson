@@ -1,5 +1,3 @@
-import Button from '../../components/ui/button';
-
 export default function Hero() {
     return (
         <section className="min-h-screen flex justify-center items-center">
@@ -20,7 +18,10 @@ export default function Hero() {
                 </p>
 
                 <div className="mt-10 flex items-center justify-center flex-wrap gap-8">
-                    <a href='#contact' className="py-3 px-[clamp(20px,5vw,35px)] text-md text-muted relative border border-border rounded-3xl bg-border hover:bg-transparent">
+                    <a
+                        href="#contact"
+                        className="py-3 px-[clamp(20px,5vw,35px)] text-md text-muted relative border border-border rounded-3xl bg-border hover:bg-transparent"
+                    >
                         Me contacter →
                     </a>
                     <a

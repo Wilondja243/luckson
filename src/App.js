@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Routes, Route, Link } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import { Toaster } from 'react-hot-toast';
 
@@ -12,7 +12,8 @@ import Router from './app/router';
 import Contact from './app/page/contact';
 import ProjectScreen from './app/page/project';
 import About from './app/page/about';
-import Service from './app/page/service';
+import CVPage from './app/page/cv';
+// import Service from './app/page/service';
 
 import Loading from './components/ui/loading';
 
@@ -27,7 +28,7 @@ export default function App() {
             setIsReady(true);
         };
 
-        if (document.readyState == 'complete') {
+        if (document.readyState === 'complete') {
             handleLoad();
         } else {
             window.addEventListener('load', handleLoad);
@@ -54,6 +55,7 @@ export default function App() {
                     <Route path="/contact" element={<Contact />} />
                     <Route path="/project" element={<ProjectScreen />} />
                     <Route path="/about" element={<About />} />
+                    <Route path="/cv" element={<CVPage />} />
                 </Routes>
             </div>
         </UseContext>

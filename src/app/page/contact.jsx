@@ -71,6 +71,7 @@ export default function Contact() {
                     <a
                         href="mailto:monalinacampany@gmail.com"
                         className="info email"
+                        rel="noreferrer"
                     >
                         <i className="bi bi-send"></i>
                         <div>
@@ -81,6 +82,7 @@ export default function Contact() {
                     <a
                         href="https://wa.me/message/3BLU6AZOQCOCN1"
                         target="_black"
+                        rel="noreferrer"
                         className="info whatsapp"
                     >
                         <i className="bi bi-whatsapp"></i>
@@ -92,6 +94,7 @@ export default function Contact() {
                     <a
                         href="https://www.linkedin.com/in/wilondja-ebuela-8a88ab374?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
                         target="_blank"
+                        rel="noreferrer"
                         className="info email"
                     >
                         <i className="bi bi-linkedin"></i>
@@ -103,6 +106,7 @@ export default function Contact() {
                     <a
                         href="https://github.com/Wilondja243"
                         target="_blank"
+                        rel="noreferrer"
                         className="info email"
                     >
                         <i className="bi bi-github"></i>

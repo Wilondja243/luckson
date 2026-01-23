@@ -8,7 +8,7 @@ import Feature from './page/feature-project';
 import Hero from '../lib/header/hero';
 import NavBar from '../lib/header/nav-bar';
 import Footer from '../lib/header/footer';
-import BackgroundAnimation from '../hooks/use-three';
+
 
 export default function Router() {
     return (

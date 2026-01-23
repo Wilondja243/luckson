@@ -43,22 +43,23 @@ export default function Project() {
                                 className={`
                                     text-xs px-3 py-1 rounded-full font-medium
                                     ${
-                                    project.status === "done" &&
-                                    "bg-green-500/10 text-green-500"
+                                        project.status === 'done' &&
+                                        'bg-green-500/10 text-green-500'
                                     }
                                     ${
-                                    project.status === "in-progress" &&
-                                    "bg-yellow-500/10 text-yellow-500"
+                                        project.status === 'in-progress' &&
+                                        'bg-yellow-500/10 text-yellow-500'
                                     }
                                     ${
-                                    project.status === "paused" &&
-                                    "bg-gray-500/10 text-gray-400"
+                                        project.status === 'paused' &&
+                                        'bg-gray-500/10 text-gray-400'
                                     }
                                 `}
-                                >
-                                {project.status === "done" && "Terminé"}
-                                {project.status === "in-progress" && "En évolution"}
-                                {project.status === "paused" && "En pause"}
+                            >
+                                {project.status === 'done' && 'Terminé'}
+                                {project.status === 'in-progress' &&
+                                    'En évolution'}
+                                {project.status === 'paused' && 'En pause'}
                             </span>
 
                             <p className="mt-3 text-sm text-muted leading-relaxed">

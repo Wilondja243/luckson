@@ -1,5 +1,5 @@
 import useRevealOnScroll from '../../hooks/use-reveal';
-import { useState, useRef } from 'react';
+import { useState } from 'react';
 
 export default function Experience() {
     const skillsRef = useRevealOnScroll();

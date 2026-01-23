@@ -17,13 +17,14 @@ export default function Service() {
 
             <section id="services" className="py-24">
                 <div ref={ref} className="reveal services max-w-7xl mx-auto">
-
                     <div className="text-center mb-16 max-w-2xl mx-auto">
                         <h2 className="text-3xl md:text-4xl font-semibold text-text">
                             Mes Services
                         </h2>
                         <p className="mt-4 text-sm md:text-base text-muted">
-                            Je conçois des solutions numériques modernes, sécurisées et performantes, adaptées aux besoins réels des entreprises et des particuliers.
+                            Je conçois des solutions numériques modernes,
+                            sécurisées et performantes, adaptées aux besoins
+                            réels des entreprises et des particuliers.
                         </p>
                     </div>
 
@@ -57,7 +58,6 @@ export default function Service() {
                             </div>
                         ))}
                     </div>
-
                 </div>
             </section>
         </>

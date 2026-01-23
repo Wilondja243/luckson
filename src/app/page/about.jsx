@@ -1,11 +1,10 @@
-import Button from '../../components/ui/button';
 import { Code, Shield, Cpu } from 'lucide-react';
+
 
 export default function About() {
     return (
         <section className="min-h-screen flex justify-center items-center">
             <div className="grid grid-cols-1 py-20 gap-x-5 gap-y-20 lg-hero:py-0 lg-hero:grid-cols-2 items-center">
-
                 <div className="about-intro">
                     <span className="text-sm text-tint uppercase font-medium tracking-wide">
                         À propos de moi
@@ -44,12 +43,15 @@ export default function About() {
                     </p>
 
                     <div className="mt-8 flex flex-wrap gap-6">
-                        <a href='#' className="py-3 px-[clamp(20px,5vw,35px)] text-md text-muted relative border border-border rounded-3xl bg-border hover:bg-transparent">
+                        <a
+                            href="/cv"
+                            className="py-3 px-[clamp(20px,5vw,35px)] text-md text-muted relative border border-border rounded-3xl bg-border hover:bg-transparent"
+                        >
                             Voir mon CV →
                         </a>
                         <a
                             href=""
-                            download
+                            download="Wilondja_Ebuela_CV.pdf"
                             className="py-3 px-[clamp(20px,5vw,35px)] text-md text-muted border border-border rounded-3xl hover:bg-border transition"
                         >
                             Télecharger mon CV →

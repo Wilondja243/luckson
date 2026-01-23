@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
-import Button from '../../components/ui/button';
+import { HashLink } from 'react-router-hash-link';
+
 
 export default function NavBar() {
     const [open, setOpen] = useState(false);
@@ -22,29 +23,29 @@ export default function NavBar() {
                     </div>
                     <ul className={`${!open ? 'hidden-left' : 'left-0'}`}>
                         <li>
-                            <a className="link active" href="#">
+                            <a className="link active" href="/">
                                 Home
                             </a>
                         </li>
                         <li>
-                            <a className="link" href="#services">
+                            <HashLink className="link" to="/#services">
                                 Services
-                            </a>
+                            </HashLink>
                         </li>
                         <li>
-                            <a className="link" href="#project">
+                            <HashLink className="link" to="/#project">
                                 Projects
-                            </a>
+                            </HashLink>
                         </li>
                         <li>
-                            <a className="link" href="#about">
+                            <HashLink className="link" to="/#about">
                                 About
-                            </a>
+                            </HashLink>
                         </li>
                         <li>
-                            <a className="link" href="#contact">
+                            <HashLink className="link" to="/#contact">
                                 Contact
-                            </a>
+                            </HashLink>
                         </li>
                     </ul>
                     <button onClick={() => setOpen(!open)} className="menu-btn">
