@@ -19,15 +19,15 @@ export default function Hero() {
                     modernes, scalables et pensées pour le monde réel.
                 </p>
 
-                <div className="mt-10 flex items-center justify-center wrap gap-8">
+                <div className="mt-10 flex items-center justify-center flex-wrap gap-8">
                     <a href='#contact' className="py-3 px-[clamp(20px,5vw,35px)] text-md text-muted relative border border-border rounded-3xl bg-border hover:bg-transparent">
-                        Me contacter
+                        Me contacter →
                     </a>
                     <a
                         href="#project"
                         className="py-3 px-[clamp(20px,5vw,35px)] text-md text-muted relative border border-border rounded-3xl hover:bg-border"
                     >
-                        Télecharger mon CV →
+                        Voir mes projets →
                     </a>
                 </div>
             </div>

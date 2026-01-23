@@ -4,8 +4,8 @@ import { Code, Shield, Cpu } from 'lucide-react';
 export default function About() {
     return (
         <section className="min-h-screen flex justify-center items-center">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
-                {/* Texte */}
+            <div className="grid grid-cols-1 py-20 gap-x-5 gap-y-20 lg-hero:py-0 lg-hero:grid-cols-2 items-center">
+
                 <div className="about-intro">
                     <span className="text-sm text-tint uppercase font-medium tracking-wide">
                         À propos de moi
@@ -44,27 +44,25 @@ export default function About() {
                     </p>
 
                     <div className="mt-8 flex flex-wrap gap-6">
-                        <a href='#contact' className="py-3 px-[clamp(20px,5vw,35px)] text-md text-muted relative border border-border rounded-3xl bg-border hover:bg-transparent">
-                            Me contacter
+                        <a href='#' className="py-3 px-[clamp(20px,5vw,35px)] text-md text-muted relative border border-border rounded-3xl bg-border hover:bg-transparent">
+                            Voir mon CV →
                         </a>
                         <a
-                            href="#projects"
+                            href=""
+                            download
                             className="py-3 px-[clamp(20px,5vw,35px)] text-md text-muted border border-border rounded-3xl hover:bg-border transition"
                         >
-                            Voir mes projets →
+                            Télecharger mon CV →
                         </a>
                     </div>
                 </div>
 
-                <div className="about-visual relative flex justify-center md:justify-end">
+                <div className="about-visual relative flex items-center justify-center lg-hero:justify-end">
                     <img
                         src="images/luckson.jpg"
                         alt="Luckson"
-                        className="rounded-3xl shadow-xl w-full max-w-[400px] object-cover"
+                        className="border-4 border-tint rounded-3xl shadow-xl w-full max-w-[400px] object-cover"
                     />
-
-                    {/* <div className="absolute -top-3 left-8 w-24 h-24 border-2 border-tint rounded-full animate-pulse opacity-40"></div>
-          <div className="absolute -bottom-5 -right-5 w-16 h-16 border-2 border-tint rounded-full animate-pulse opacity-30"></div> */}
                 </div>
             </div>
         </section>

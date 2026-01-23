@@ -4,6 +4,9 @@ module.exports = {
     content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
     theme: {
         extend: {
+            screens: {
+                'lg-hero': '950px',
+            },
             colors: {
                 text: 'var(--bs-text)',
                 muted: 'var(--bs-muted)',

@@ -6,7 +6,7 @@ export default function Project() {
     const ref = useRevealOnScroll();
 
     return (
-        <section id="project" className="py-24">
+        <section id="project" className="">
             <div ref={ref} className="reveal max-w-7xl mx-auto">
                 <div className="text-center max-w-2xl mx-auto mb-16">
                     <h2 className="text-3xl md:text-4xl font-semibold text-text">
