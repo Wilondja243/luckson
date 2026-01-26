@@ -14,10 +14,11 @@ export default function Experience() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-6">
                     {[
                         ['Python / Django', 70],
-                        ['JavaScript / React', 80],
-                        ['React Native', 70],
-                        ['AI (ML / DL)', 55],
-                        ['CyberSécurité', 65],
+                        ['JavaScript / React', 70],
+                        ['Nextjs', 55],
+                        ['React Native', 65],
+                        ['AI (ML / DL)', 50],
+                        ['CyberSécurité', 60],
                     ].map(([label, value]) => (
                         <div key={label} className="group">
                             <div className="child flex justify-between mb-2">
@@ -41,7 +42,8 @@ export default function Experience() {
                 ref={statsRef}
                 className="reveal grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8"
             >
-                <div className="child p-8 rounded-2xl bg-gradient-to-b from-white/[0.03] to-transparent border border-white/10 text-center">
+                <div
+                    className="child p-8 rounded-2xl bg-gradient-to-b from-white/[0.03] to-transparent border border-white/10 text-center transition-all duration-300 ease-out transform hover:border-cyan-900 hover:-translate-y-2 cursor-default shadow-lg hover:shadow-cyan-900/10">
                     <strong className="block text-5xl font-bold text-white mb-2">
                         8+
                     </strong>
@@ -49,7 +51,7 @@ export default function Experience() {
                         Projets réalisés
                     </span>
                 </div>
-                <div className="child p-8 rounded-2xl bg-gradient-to-b from-white/[0.03] to-transparent border border-white/10 text-center">
+                <div className="child p-8 rounded-2xl bg-gradient-to-b from-white/[0.03] to-transparent border border-white/10 text-center transition-all duration-300 ease-out transform hover:border-cyan-900 hover:-translate-y-2 cursor-default shadow-lg hover:shadow-cyan-900/10">
                     <strong className="block text-5xl font-bold text-white mb-2">
                         3+
                     </strong>
@@ -57,7 +59,7 @@ export default function Experience() {
                         Années d'expérience
                     </span>
                 </div>
-                <div className="child p-8 rounded-2xl bg-gradient-to-b from-white/[0.03] to-transparent border border-white/10 text-center">
+                <div className="child p-8 rounded-2xl bg-gradient-to-b from-white/[0.03] to-transparent border border-white/10 text-center transition-all duration-300 ease-out transform hover:border-cyan-900 hover:-translate-y-2 cursor-default shadow-lg hover:shadow-cyan-900/10">
                     <strong className="block text-5xl font-bold text-white mb-2">
                         6+
                     </strong>
