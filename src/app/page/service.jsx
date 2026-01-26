@@ -15,11 +15,11 @@ export default function Service() {
                 />
             </Helmet>
 
-            <section id="services" className="py-24">
+            <section id="services" className="pb-24 pt-5">
                 <div ref={ref} className="reveal services max-w-7xl mx-auto">
-                    <div className="text-center mb-16 max-w-2xl mx-auto">
-                        <h2 className="text-3xl md:text-4xl font-semibold text-text">
-                            Mes Services
+                    <div className="mb-16 max-w-xl">
+                        <h2 className="text-3xl md:text-4xl font-black text-text">
+                            Mes <strong className="text-tint">Services</strong>
                         </h2>
                         <p className="mt-4 text-sm md:text-base text-muted">
                             Je conçois des solutions numériques modernes,

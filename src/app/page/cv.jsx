@@ -7,16 +7,9 @@ import {
     languages,
     interests,
 } from '../../data/cv-data';
-import {
-    Mail,
-    MapPin,
-    Phone,
-    Calendar,
-    Download
-} from 'lucide-react';
+import { Mail, MapPin, Phone, Calendar, Download } from 'lucide-react';
 import NavBar from '../../lib/header/nav-bar';
-import Footer from '../../lib/header/footer'
-
+import Footer from '../../lib/header/footer';
 
 export default function CVPage() {
     return (
@@ -38,7 +31,8 @@ export default function CVPage() {
                             />
                             <div className="space-y-3 text-[13px] w-full pt-4 text-slate-400">
                                 <div className="flex items-center gap-3">
-                                    <Mail size={14} /> lucksonpremier@example.com
+                                    <Mail size={14} />{' '}
+                                    lucksonpremier@example.com
                                 </div>
                                 <div className="flex items-center gap-3">
                                     <MapPin size={14} /> Bujumbura, Burundi
@@ -117,10 +111,12 @@ export default function CVPage() {
                                 Sécurité
                             </h2>
                             <p className="mt-4 text-sm text-slate-400 max-w-2xl leading-relaxed">
-                                Développeur FullStack orienté vers l'écosystème Django et React. 
-                                Mon parcours s'articule autour du développement d'applications web, 
-                                de l'encadrement technique et d'un intérêt marqué pour les solutions 
-                                mêlant Intelligence Artificielle et Cybersécurité.
+                                Développeur FullStack orienté vers l'écosystème
+                                Django et React. Mon parcours s'articule autour
+                                du développement d'applications web, de
+                                l'encadrement technique et d'un intérêt marqué
+                                pour les solutions mêlant Intelligence
+                                Artificielle et Cybersécurité.
                             </p>
                         </header>
 
@@ -190,7 +186,11 @@ export default function CVPage() {
                 </div>
 
                 <div className="fixed bottom-6 right-6">
-                    <a href='/files/wilondja_cv.pdf' download="Wilodja_Ebuela_CV.pdf" className="bg-tint_soft hover:bg-tint text-text px-4 py-2 rounded-full shadow-xl transition-all hover:scale-110 flex items-center gap-2 font-bold">
+                    <a
+                        href="/files/wilondja_cv.pdf"
+                        download="Wilodja_Ebuela_CV.pdf"
+                        className="bg-tint_soft hover:bg-tint text-text px-4 py-2 rounded-full shadow-xl transition-all hover:scale-110 flex items-center gap-2 font-bold"
+                    >
                         <Download size={20} />{' '}
                         <span className="text-xs uppercase tracking-tighter">
                             Télécharger PDF

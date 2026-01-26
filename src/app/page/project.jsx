@@ -8,9 +8,9 @@ export default function Project() {
     return (
         <section id="project" className="">
             <div ref={ref} className="reveal max-w-7xl mx-auto">
-                <div className="text-center max-w-2xl mx-auto mb-16">
-                    <h2 className="text-3xl md:text-4xl font-semibold text-text">
-                        Projets réalisés
+                <div className="max-w-xl mb-16">
+                    <h2 className="text-3xl md:text-4xl font-black text-text">
+                        Projets <strong className="text-tint">réalisés</strong>
                     </h2>
                     <p className="mt-4 text-sm md:text-base text-muted">
                         Une sélection de projets sur lesquels j’ai conçu et

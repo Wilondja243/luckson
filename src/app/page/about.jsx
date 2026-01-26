@@ -1,21 +1,30 @@
 import { Code, Shield, Cpu } from 'lucide-react';
+import useRevealOnScroll from '../../hooks/use-reveal';
 
 export default function About() {
+    const aboutRef = useRevealOnScroll();
+
     return (
-        <section className="min-h-screen flex justify-center items-center">
-            <div className="grid grid-cols-1 py-20 gap-x-5 gap-y-20 lg-hero:py-0 lg-hero:grid-cols-2 items-center">
+        <section
+            id="about"
+            className="min-h-screen flex justify-center items-center"
+        >
+            <div
+                ref={aboutRef}
+                className="reveal grid grid-cols-1 py-20 gap-x-5 gap-y-20 lg-hero:py-0 lg-hero:grid-cols-2 items-center"
+            >
                 <div className="about-intro">
-                    <span className="text-sm text-tint uppercase font-medium tracking-wide">
+                    <span className="child text-sm text-tint uppercase font-medium tracking-wide">
                         À propos de moi
                     </span>
 
-                    <h1 className="text-[clamp(20px,5vw,43px)] font-bold text-text mt-3 leading-tight max-w-[700px]">
+                    <h1 className="child text-[clamp(20px,5vw,43px)] font-bold text-text mt-3 leading-tight max-w-[700px]">
                         Je suis{' '}
                         <span className="text-tint">Wilonjda Ebuela</span>,
                         développeur FullStack & passionné de cybersécurité
                     </h1>
 
-                    <p className="mt-5 text-[15px] text-muted leading-relaxed max-w-[550px]">
+                    <p className="child mt-5 text-[15px] text-muted leading-relaxed max-w-[550px]">
                         Je conçois des applications performantes, sécurisées et
                         orientées utilisateur. J’allie développement, sécurité
                         et intelligence artificielle pour créer des solutions
@@ -23,25 +32,25 @@ export default function About() {
                     </p>
 
                     <div className="mt-6 flex flex-wrap gap-4">
-                        <div className="flex items-center gap-2 text-muted">
+                        <div className="child flex items-center gap-2 text-muted">
                             <Code className="text-tint" /> Développement Web
                         </div>
-                        <div className="flex items-center gap-2 text-muted">
+                        <div className="child flex items-center gap-2 text-muted">
                             <Shield className="text-tint" /> Cybersécurité
                         </div>
-                        <div className="flex items-center gap-2 text-muted">
+                        <div className="child flex items-center gap-2 text-muted">
                             <Cpu className="text-tint" /> Intelligence
                             Artificielle
                         </div>
                     </div>
 
-                    <p className="mt-4 text-[15px] text-muted leading-relaxed max-w-[550px]">
+                    <p className="child mt-4 text-[15px] text-muted leading-relaxed max-w-[550px]">
                         Quand je ne code pas, je m’intéresse à la veille tech et
                         à la découverte de nouvelles technologies qui
                         transforment notre manière de travailler.
                     </p>
 
-                    <div className="mt-8 flex flex-wrap gap-6">
+                    <div className="child mt-8 flex flex-wrap gap-6">
                         <a
                             href="/cv"
                             className="py-3 px-[clamp(20px,5vw,35px)] text-md text-muted relative border border-border rounded-3xl bg-border hover:bg-transparent"
@@ -58,7 +67,7 @@ export default function About() {
                     </div>
                 </div>
 
-                <div className="about-visual relative flex items-center justify-center lg-hero:justify-end">
+                <div className="child about-visual relative flex items-center justify-center lg-hero:justify-end">
                     <img
                         src="images/luckson.jpg"
                         alt="Luckson"
