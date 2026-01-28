@@ -4,7 +4,7 @@ export default function Hero() {
     const heroRef = useRevealOnScroll();
 
     return (
-        <section className="min-h-screen flex justify-center items-center">
+        <section className="py-14 md:min-h-screen flex justify-center items-center">
             <div ref={heroRef} className="reveal text-center">
                 <span className="child inline-block mb-4 py-1 px-4 text-sm space-x-1 uppercase text-tint bg-[rgba(0,189,149,0.12)] rounded-3xl">
                     Digital Architect • Security • AI

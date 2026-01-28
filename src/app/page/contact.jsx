@@ -39,7 +39,7 @@ export default function Contact() {
     };
 
     return (
-        <section id="contact" className=" text-white py-24 px-8">
+        <section id="contact" className=" text-white py-24">
             <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-24">
                 <div className="space-y-12">
                     <div>

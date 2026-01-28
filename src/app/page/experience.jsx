@@ -6,7 +6,7 @@ export default function Experience() {
     const expRef = useRevealOnScroll();
 
     return (
-        <main className="mx-auto px-6 py-20 space-y-32">
+        <main className="mx-auto py-20 space-y-32">
             <section ref={skillsRef} className="reveal">
                 <h2 className="child text-4xl font-black text-white mb-12">
                     Compétences
@@ -77,7 +77,7 @@ export default function Experience() {
                     <div className="h-[2px] flex-grow bg-gradient-to-r from-cyan-500 to-transparent"></div>
                 </div>
 
-                <div className="relative border-l border-white/10 ml-4 md:ml-0 md:grid md:grid-cols-2 md:border-none gap-x-12 gap-y-12">
+                <div className="relative border-l pl-2 border-white/10 ml-4 md:ml-0 md:grid md:grid-cols-2 md:border-none gap-x-12 gap-y-12">
                     {/* Ligne centrale pour desktop */}
                     <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-[1px] bg-gradient-to-b from-cyan-500 via-white/10 to-transparent -translate-x-1/2"></div>
 
