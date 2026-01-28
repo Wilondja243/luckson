@@ -12,8 +12,8 @@ import Footer from '../lib/header/footer';
 export default function Router() {
     return (
         <>
-            <div className="container">
-                <header>
+            <div >
+                <header style={{backgroundImage: "url('svg/bg.svg')"}}>
                     <NavBar />
                     <div>
                         <Hero />

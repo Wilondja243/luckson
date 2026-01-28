@@ -43,7 +43,7 @@ export default function Experience() {
                 className="reveal grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8"
             >
                 <div
-                    className="child p-8 rounded-2xl bg-gradient-to-b from-white/[0.03] to-transparent border border-white/10 text-center transition-all duration-300 ease-out transform hover:border-cyan-900 hover:-translate-y-2 cursor-default shadow-lg hover:shadow-cyan-900/10">
+                    className="child p-8 rounded-2xl bg-gradient-to-b from-white/[0.03] to-transparent border border-white/10 text-center hover:border-cyan-900 cursor-default shadow-lg hover:shadow-cyan-900/10">
                     <strong className="block text-5xl font-bold text-white mb-2">
                         8+
                     </strong>
@@ -51,7 +51,7 @@ export default function Experience() {
                         Projets réalisés
                     </span>
                 </div>
-                <div className="child p-8 rounded-2xl bg-gradient-to-b from-white/[0.03] to-transparent border border-white/10 text-center transition-all duration-300 ease-out transform hover:border-cyan-900 hover:-translate-y-2 cursor-default shadow-lg hover:shadow-cyan-900/10">
+                <div className="child p-8 rounded-2xl bg-gradient-to-b from-white/[0.03] to-transparent border border-white/10 text-center hover:border-cyan-900 cursor-default shadow-lg hover:shadow-cyan-900/10">
                     <strong className="block text-5xl font-bold text-white mb-2">
                         3+
                     </strong>
@@ -59,7 +59,7 @@ export default function Experience() {
                         Années d'expérience
                     </span>
                 </div>
-                <div className="child p-8 rounded-2xl bg-gradient-to-b from-white/[0.03] to-transparent border border-white/10 text-center transition-all duration-300 ease-out transform hover:border-cyan-900 hover:-translate-y-2 cursor-default shadow-lg hover:shadow-cyan-900/10">
+                <div className="child p-8 rounded-2xl bg-gradient-to-b from-white/[0.03] to-transparent border border-white/10 text-center hover:border-cyan-900 cursor-default shadow-lg hover:shadow-cyan-900/10">
                     <strong className="block text-5xl font-bold text-white mb-2">
                         6+
                     </strong>
